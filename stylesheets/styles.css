@@ -694,8 +694,15 @@ header p {
   margin-right: -382px;
   position: fixed;
   top: 115px;
-  background: #ffcc00;
-  border: 1px solid #f0b500;
+  background: rgb(244,244,244); /* Old browsers */
+  background: -moz-linear-gradient(top,  rgba(244,244,244,1) 0%, rgba(255,255,255,1) 51%, rgba(244,244,244,1) 100%); /* FF3.6+ */
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(244,244,244,1)), color-stop(51%,rgba(255,255,255,1)), color-stop(100%,rgba(244,244,244,1))); /* Chrome,Safari4+ */
+  background: -webkit-linear-gradient(top,  rgba(244,244,244,1) 0%,rgba(255,255,255,1) 51%,rgba(244,244,244,1) 100%); /* Chrome10+,Safari5.1+ */
+  background: -o-linear-gradient(top,  rgba(244,244,244,1) 0%,rgba(255,255,255,1) 51%,rgba(244,244,244,1) 100%); /* Opera 11.10+ */
+  background: -ms-linear-gradient(top,  rgba(244,244,244,1) 0%,rgba(255,255,255,1) 51%,rgba(244,244,244,1) 100%); /* IE10+ */
+  background: linear-gradient(to bottom,  rgba(244,244,244,1) 0%,rgba(255,255,255,1) 51%,rgba(244,244,244,1) 100%); /* W3C */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f4f4f4', endColorstr='#f4f4f4',GradientType=0 ); /* IE6-9 */
+  border: 1px solid #eee;
   -moz-box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.25);
   -webkit-box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.25);
   -o-box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.25);
@@ -750,11 +757,7 @@ header p {
   position: fixed;
   left: 50%;
   margin-left: -325px;
-  padding: 10px 12px;
   margin-top: 6px;
-  line-height: 14px;
-  font-size: 14px;
-  background-color: #FFE788;
 }
 #banner .downloads {
   float: right;
