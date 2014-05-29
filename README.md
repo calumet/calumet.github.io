@@ -1,4 +1,4 @@
-calumet.github.io
-=================
+Calumet Developers Website
+==========================
 
-Calumet developers website.
+Actualmente el [Grupo Calumet](http://cormoran.uis.edu.co/calumet) está trabajando en varios proyectos antes de lanzar este. Esperamos que en algunos meses completemos el desarrollo. Espéralo...
