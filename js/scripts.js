@@ -1,21 +1,6 @@
 // Calumet - Software Development Group
 // Website, Styles, 2014
 
-/*
-Luis González
-Duvan Vargas
-Yadiana Laitón
-Carlos Rojas
-Danay Quintero
-Diego Cacua
-Juan Martínez
-Liliana Rey
-Mónica Cárdenas
-Nestor Rodrigez
-Patricia Patiño
-Romel Pérez
-*/
-
 jQuery(document).ready(function ($) {
     
     // Who are using these projects?
@@ -28,34 +13,59 @@ jQuery(document).ready(function ($) {
         onSliderLoad: function () {
             $('.whousingthese img').removeAttr('title');
         }
-        //,mode: 'vertical'
     });
 
-    // Gallery overview script
-    $('#content-slides').slides({
-        preload: true,
-        generateNextPrev: true
+
+    // Show/Hide previous corworkers
+    $('.team-showprevious').toggle(function (e) {
+        $('.team-previous').slideDown(500);
+        $(this).find('span').text('Hide');
+    }, function (e) {
+        $('.team-previous').slideUp(500);
+        $(this).find('span').text('Show');
     });
 
-    // Parallax and Menu scroll script
-    $('#nav, .menu').localScroll({offset: -70});
-    $('#tech').parallax("50%", 0.3);
-    $('#features').parallax("50%", 0.3);
 
     // Responsive Menu  
-    $("#menu").click(function () {
+    $("#menu").on('click', function () {
         $("ul.menu").toggle();
     });
 
+
+    // ScrollTo
+    $('#nav, .menu').find('a').each(function () {
+        var $a = $(this);
+        var href = $a.attr('href');
+        $a.on('click', function (e) {
+            e.preventDefault();
+            $(href).ScrollTo({
+                duration: 1500,
+                offsetTop: 70
+            });
+        });
+    });
+
+    // Parallax and Menu scroll script
+    /*$('#nav, .menu').localScroll({offset: -70});
+    $('#tech').parallax("50%", 0.3);
+    $('#features').parallax("50%", 0.3);*/
+
+
+    // Gallery overview script
+    /*$('#content-slides').slides({
+        preload: true,
+        generateNextPrev: true
+    });*/
+
     // Intro slideshow Script
-    $("#slide").responsiveSlides({
+    /*$("#slide").responsiveSlides({
         maxwidth:12000,
         speed: 800
-    });
+    });*/
 
 
     // Testimonials Script
-    var currentPosition = 0;
+    /*var currentPosition = 0;
     var slideWidth = 960;
     var slides = $('.team-slide');
     var numberOfSlides = slides.length;
@@ -80,11 +90,11 @@ jQuery(document).ready(function ($) {
     }
     function moveSlide() {
         $('#slidesHolder').animate({'marginLeft' : slideWidth*(-currentPosition)});
-    }
+    }*/
 
 
     // Lightbox gallery script
-    $('.lightbox_trigger').click(function(e) {
+    /*$('.lightbox_trigger').click(function(e) {
         
         //prevent default action (hyperlink)
         e.preventDefault();
@@ -92,13 +102,11 @@ jQuery(document).ready(function ($) {
         //Get clicked link href
         var image_href = $(this).attr("href");
         
-        /*  
-        If the lightbox window HTML already exists in document, 
-        change the img src to to match the href of whatever link was clicked
+        //If the lightbox window HTML already exists in document, 
+        //change the img src to to match the href of whatever link was clicked
         
-        If the lightbox window HTML doesn't exists, create it and insert it.
-        (This will only happen the first time around)
-        */
+        //If the lightbox window HTML doesn't exists, create it and insert it.
+        //(This will only happen the first time around)
         
         if ($('#lightbox').length > 0) { // #lightbox exists
             
@@ -124,11 +132,11 @@ jQuery(document).ready(function ($) {
             $('body').append(lightbox);
         }
         
-    });
+    });*/
 
     //Click anywhere on the page to get rid of lightbox window
-    $('#lightbox').live('click', function() { //must use live, as the lightbox element is inserted into the DOM
+    /*$('#lightbox').live('click', function() { //must use live, as the lightbox element is inserted into the DOM
         $('#lightbox').hide();
-    });
+    });*/
 
 });

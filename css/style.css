@@ -127,7 +127,7 @@ header {
     width:100%;
     z-index:9999;
     margin:0;
-    background-image: url(http://holperspest.com/wp-content/uploads/2013/10/blue-blur.png);
+    background-image: url(../images/patterns/blue.png);
     background-position-y: 80%;
 }
 
@@ -466,7 +466,7 @@ ul.content li.mail {background-image: url('../images/buttons/mail.png');}
     border-bottom:1px solid #E0E0E0;
     padding-bottom:30px;
     text-align:center;
-    background: url(http://www.wallpaperup.com/uploads/wallpapers/2012/08/09/10043/0c7e53c25327f2c3a94bee4599a4130d.jpg) 50% 0 repeat fixed;
+    background: url(../images/patterns/green.jpg) 50% 0 repeat fixed;
     background-color:black;
 }
 
@@ -511,11 +511,11 @@ ul.content li.mail {background-image: url('../images/buttons/mail.png');}
 }
 
 #techandtoolsImg {
-    width: 100%;
+    max-width: 100%;
 }
 
 /* Pricing */
-
+/*
 #pricing {
     color: #020B6B;
     height: auto;
@@ -580,7 +580,7 @@ ul.content li.mail {background-image: url('../images/buttons/mail.png');}
     line-height:180%;
     padding:10px 0;
     border-top:1px solid #f2f2f2;
-}
+}*/
 
 /* Team */
 
@@ -592,15 +592,70 @@ ul.content li.mail {background-image: url('../images/buttons/mail.png');}
     border-bottom:1px solid #E0E0E0;
     padding-bottom:30px;
     text-align:center;
-    background: url(http://distinctionjewelry.com/info/wp-content/uploads/2013/01/blurred-background-5-2000x1250.jpg) fixed;
+    background: url(../images/patterns/sand.jpg) fixed;
     /* background-color:black; */
 }
 
-#team p {
-    color: white;
+#team {
+    color: white !important;
+    font-size: 22px !important;
+}
+.team-current{
+    margin-bottom: 12px;
+}
+.team-current .team-member {
+    display: inline-block;
+    margin-bottom: 10px;
+    font-family: Roboto;
+    text-align: center;
+    width: 24.5%;
+}
+.team-current .team-member img {
+    width: 150px;
 }
 
-.team-intro {
+/* Smartphones (portrait) ----------- */
+@media only screen 
+and (max-width : 320px) {
+    .team-current .team-member { width: 46%; font-size: 15px; }
+    .team-current .team-member img { width: 120px; }
+}
+
+/* Smartphones (landscape) ----------- */
+@media only screen 
+and (min-width : 321px) 
+and (max-width : 520px) {
+    .team-current .team-member { width: 46%; font-size: 19px; }
+    .team-current .team-member img { width: 140px; }
+}
+
+/* iPads (portrait and landscape) ----------- */
+@media only screen 
+and (min-width : 521px) 
+and (max-width : 768px) {
+    .team-current .team-member { width: 33%; }
+}
+
+.team-previous {
+    display: none;
+}
+.team-previous h2 {
+    margin-bottom: 0;
+}
+.team-previous ul.content li {
+    padding-top: 0;
+    color: white;
+    background-image: url(../images/buttons/user.png);
+}
+.team-showprevious {
+    margin-top: 30px;
+    font-family: Roboto;
+    font-size: 22px;
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+/*.team-intro {
     margin:0 50px;
     overflow:hidden;
 }
@@ -633,7 +688,7 @@ ul.content li.mail {background-image: url('../images/buttons/mail.png');}
     text-align:center;
     font-size:22px;
     padding: 0 100px 15px;
-}
+}*/
 
 /* Contact */
 
