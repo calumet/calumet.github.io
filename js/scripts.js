@@ -2,7 +2,7 @@
 // Website, Styles, 2014
 
 jQuery(document).ready(function ($) {
-    
+
     // Who are using these projects?
     $('.whousingthese').bxSlider({
         slideWidth: 400,
@@ -45,98 +45,14 @@ jQuery(document).ready(function ($) {
         });
     });
 
-    // Parallax and Menu scroll script
-    /*$('#nav, .menu').localScroll({offset: -70});
-    $('#tech').parallax("50%", 0.3);
-    $('#features').parallax("50%", 0.3);*/
 
+    // Google Analytics
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
 
-    // Gallery overview script
-    /*$('#content-slides').slides({
-        preload: true,
-        generateNextPrev: true
-    });*/
-
-    // Intro slideshow Script
-    /*$("#slide").responsiveSlides({
-        maxwidth:12000,
-        speed: 800
-    });*/
-
-
-    // Testimonials Script
-    /*var currentPosition = 0;
-    var slideWidth = 960;
-    var slides = $('.team-slide');
-    var numberOfSlides = slides.length;
-    var slideShowInterval;
-    var speed = 8000;
-
-    slideShowInterval = setInterval(changePosition, speed);
-    
-    slides.wrapAll('<div id="slidesHolder"></div>')
-    
-    slides.css({ 'float' : 'left' });
-    
-    $('#slidesHolder').css('width', slideWidth * numberOfSlides);
-    
-    function changePosition() {
-        if(currentPosition == numberOfSlides - 1) {
-            currentPosition = 0;
-        } else {
-            currentPosition++;
-        }
-        moveSlide();
-    }
-    function moveSlide() {
-        $('#slidesHolder').animate({'marginLeft' : slideWidth*(-currentPosition)});
-    }*/
-
-
-    // Lightbox gallery script
-    /*$('.lightbox_trigger').click(function(e) {
-        
-        //prevent default action (hyperlink)
-        e.preventDefault();
-        
-        //Get clicked link href
-        var image_href = $(this).attr("href");
-        
-        //If the lightbox window HTML already exists in document, 
-        //change the img src to to match the href of whatever link was clicked
-        
-        //If the lightbox window HTML doesn't exists, create it and insert it.
-        //(This will only happen the first time around)
-        
-        if ($('#lightbox').length > 0) { // #lightbox exists
-            
-            //place href as img src value
-            $('#content').html('<img src="' + image_href + '" />');
-            
-            //show lightbox window - you could use .show('fast') for a transition
-            $('#lightbox').show();
-        }
-        
-        else { //#lightbox does not exist - create and insert (runs 1st time only)
-            
-            //create HTML markup for lightbox window
-            var lightbox = 
-            '<div id="lightbox">' +
-                '<p>Click to close</p>' +
-                '<div id="content">' + //insert clicked link's href into img src
-                    '<img src="' + image_href +'" />' +
-                '</div>' +  
-            '</div>';
-                
-            //insert lightbox HTML into page
-            $('body').append(lightbox);
-        }
-        
-    });*/
-
-    //Click anywhere on the page to get rid of lightbox window
-    /*$('#lightbox').live('click', function() { //must use live, as the lightbox element is inserted into the DOM
-        $('#lightbox').hide();
-    });*/
+    ga('create', 'UA-52137235-1', 'calumet.github.io');
+    ga('send', 'pageview');
 
 });

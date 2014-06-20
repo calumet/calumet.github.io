@@ -145,7 +145,7 @@ header {
 }
 
 #menu {
-    background: url(../images/content/menu.png) no-repeat;
+    background: url(../images/buttons/menu.png) no-repeat;
     float:right;
     width:50px;
     height:50px;
@@ -183,13 +183,13 @@ ul.menu li {
 }
 
 ul.menu  li a {
-    color:#9D9D9D;
+    color:#777;
     text-decoration:none;
     display:block;
 }
 
 ul.menu li a:hover {
-    color:#020B6B;
+    color:#337;
     text-decoration:none;
 }
 
@@ -314,13 +314,17 @@ ul.menu li a:hover {
 
 #overview {
     color: #020B6B;
-    background-color: #f5f5f5;
+    background: #222 url(../images/patterns/greysquares.png) 50% 262px;
     height: auto;
     margin: 0 auto;
     overflow: hidden;
     border-bottom:1px solid #E0E0E0;
     text-align:center;
     padding-bottom:30px;
+}
+
+#overview h2, #overview p {
+    color: white;
 }
 
 /* Gallery */
@@ -514,73 +518,6 @@ ul.content li.mail {background-image: url('../images/buttons/mail.png');}
     max-width: 100%;
 }
 
-/* Pricing */
-/*
-#pricing {
-    color: #020B6B;
-    height: auto;
-    margin: 0 auto;
-    overflow: hidden;
-    border-bottom:1px solid #E0E0E0;
-    padding-bottom:30px;
-    background-color: #f2f2f2;
-    text-align:center;
-}
-
-.prices {
-    border-radius:6px;
-    background-color:white;
-    padding:0 0px 20px;
-    -webkit-box-shadow: 0px 0px 20px 0px #BABABA;
-    box-shadow: 0px 0px 20px 0px #BABABA;
-}
-
-.featured-price {
-    zoom: 1.1 !important;
-    margin-top:-20px !important;
-    border-radius:6px;
-    background-color:white;
-    padding:0 0px 20px;
-    -webkit-box-shadow: 0px 0px 20px 0px #BABABA;
-    box-shadow: 0px 0px 20px 0px #BABABA;
-}
-
-.prices h3, .featured-price h3 {
-    background-color:#020B6B;
-    color:white;
-    border-radius:6px 6px 0px 0px;
-    padding:15px 0;
-}
-
-.prices h3, .prices p, .prices ul li, .featured-price h3, .featured-price p, .featured-price ul li {
-    text-align:center;
-}
-
-.prices p.price, .featured-price p.price {
-    font-size:42px;
-    color:#3E3E3E;
-}
-
-.prices p.period, .featured-price p.period {
-    margin-top:-15px;
-    font-size:12px;
-    margin-bottom:15px;
-}
-
-.prices ul.pricing-details, .featured-price ul.pricing-details {
-    padding:0;
-    margin:0;
-}
-
-.prices ul.pricing-details li, .featured-price ul.pricing-details li {
-    padding:0;
-    margin:0;
-    list-style:none;
-    color:#9D9D9D;
-    line-height:180%;
-    padding:10px 0;
-    border-top:1px solid #f2f2f2;
-}*/
 
 /* Team */
 
@@ -593,7 +530,6 @@ ul.content li.mail {background-image: url('../images/buttons/mail.png');}
     padding-bottom:30px;
     text-align:center;
     background: url(../images/patterns/sand.jpg) fixed;
-    /* background-color:black; */
 }
 
 #team {
@@ -637,6 +573,7 @@ and (max-width : 768px) {
 }
 
 .team-previous {
+    overflow: auto;
     display: none;
 }
 .team-previous h2 {
@@ -655,40 +592,6 @@ and (max-width : 768px) {
     cursor: pointer;
 }
 
-/*.team-intro {
-    margin:0 50px;
-    overflow:hidden;
-}
-
-.team-slide {
-    width:840px;
-    margin-right:120px;
-}
-
-.team-slide img {
-    float:left;
-    padding-right:50px;
-    width: 150px;
-    height: 150px;
-    -webkit-border-radius: 150px;
-    border-radius: 150px;
-}
-
-.team-slide p {
-    text-align:left;
-    float:left;
-    width:75%;
-    font-size:22px;
-    padding:15px 0 0;
-
-}
-
-.team-aligncenter img, .team-aligncenter p {
-    float:none;
-    text-align:center;
-    font-size:22px;
-    padding: 0 100px 15px;
-}*/
 
 /* Contact */
 
@@ -701,39 +604,6 @@ and (max-width : 768px) {
     padding-bottom:30px;
 }
 
-form#contact-form input, form#contact-form textarea {
-    margin-top:20px;
-    background-color: #E0E0E0;
-    padding:15px;
-    border-radius:3px;
-    border:none;
-    display:block;
-    font-size:16px;
-    color:#6C6C6C;
-    width:90%;
-}
-
-form#contact-form textarea {
-    height:50px;
-}
-
-form#contact-form input#submit-contact {
-    margin-top:10px;
-    background-color:#020B6B;
-    padding:15px;
-    border-radius:3px;
-    border:none;
-    display:block;
-    width:auto;
-    font-size:18px;
-    color:white;
-    margin:20px auto 0;
-    cursor:pointer;
-}
-
-form#contact-form input#submit-contact:hover {
-    background-color:#D5832C;
-}
 
 /* Footer */
 
