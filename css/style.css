@@ -1,14 +1,10 @@
 /*
-Template: Mandarina Landing page
-Version 1.0
-Author: Laura Agustí
-Author URL: http://www.lauraagusti.com/
+ Calumet - Software Development Group
+ Website, Styles, 2014
  Tempplate URL: http://mildthemes.com/templates/mandarina/
 */
 
 @charset "utf-8";
-
-/* CSS Document */
 
 /* General */
 
@@ -26,8 +22,8 @@ body{
 
 blockquote, p {
     margin: 0;
-    color:#777;
-    line-height:180%;	
+    /* color:#777; */
+    line-height:180%;   
 }
 
 blockquote {
@@ -49,6 +45,7 @@ blockquote, p, ul{
     font-size-adjust:0.488;
     font-weight:300;
     font-style:normal;
+    color: black;
 }
 
 a, a:visited {
@@ -119,17 +116,19 @@ h3 {
     margin:0 auto;
 }
 
+
+
 /* Header */
 
 header {
-    border-bottom:1px solid #E0E0E0;
     position:fixed;
     top:0;
     left:0;
     width:100%;
     z-index:9999;
     margin:0;
-    background-color:white;
+    background-image: url(http://holperspest.com/wp-content/uploads/2013/10/blue-blur.png);
+    background-position-y: 80%;
 }
 
 .logo {
@@ -142,6 +141,7 @@ header {
     float:left;
     background-size:auto 35px;
     margin-top:15px;
+    color: white;
 }
 
 #menu {
@@ -206,14 +206,15 @@ ul.menu li a:hover {
 
 #nav li a {
     text-decoration:none;
-    color:#666;
+    color:white;
     padding-bottom:3px;
 }
 
 #nav li a:hover {
-    color: #020B6B;
-    border-bottom: 2px solid #020B6B;
+    color: #B3DDFF;
 }
+
+
 
 /* Content */
 
@@ -236,7 +237,7 @@ ul.menu li a:hover {
 }
 
 .left-box{
-    float: left;	
+    float: left;    
     margin: 0 0 0 20px;
 }
 
@@ -248,28 +249,24 @@ ul.menu li a:hover {
 .wrapper .left-box, .wrapper .right-box{
     padding: 0;
     position: relative;
-    width: 45%;	
+    width: 45%; 
     text-align:justify;
 }
 
+
+
 /* Intro */
-
-
 
 #intro {
     width: 100%;
-    color: white;
+    color: rgb(8, 15, 90);
     margin: 0px auto;
     padding: 0;
     overflow:hidden;
-    background-color:#16A085;
+    background-color:white;
     position:relative;
-    -webkit-background-size: cover;
-    background-size: cover;
     text-align: center;
-    -webkit-box-shadow: inset 0 0 10px #333;
-    box-shadow: inset 0 0 10px #333;
-
+    border-bottom: 1px solid #DDD;
 }
 
 .grid {
@@ -307,14 +304,17 @@ ul.menu li a:hover {
 .intro-text p {
     font-size:22px;
     line-height:150%;
-    color:white;
+    color: rgb(8, 15, 90);
     margin:10px 0;
 }
+
+
 
 /* Overview */
 
 #overview {
     color: #020B6B;
+    background-color: #f5f5f5;
     height: auto;
     margin: 0 auto;
     overflow: hidden;
@@ -381,7 +381,6 @@ ul.menu li a:hover {
 /* Features */
 
 #features {
-    background-color: #f5f5f5;
     color: #020B6B;
     height: auto;
     margin: 0 auto;
@@ -392,7 +391,7 @@ ul.menu li a:hover {
 }
 
 .featured-1 {
-    background-image: url('../images/featured/portal.png');
+    background-image: url('../images/implementations/sistemas.png');
     width: 300px;
     height: 300px;
     margin: 0 auto;
@@ -408,7 +407,7 @@ ul.menu li a:hover {
 }
 
 .featured-3 {
-    background-image: url('../images/featured/elise-public.png');
+    background-image: url('../images/featured/realtime.png');
     width: 300px;
     height: 300px;
     margin: 0 auto;
@@ -437,7 +436,7 @@ ul.menu li a:hover {
 
 ul.content {
     margin: 10px 0;
-    color:#9D9D9D;
+    color:#777;
     line-height:180%;
     padding:0px;
 }
@@ -452,8 +451,10 @@ ul.content li {
     padding-top:5px;
     padding-bottom:5px;
     text-align:left;
-
 }
+ul.content li.office {background-image: url('../images/buttons/office.png');}
+ul.content li.phone {background-image: url('../images/buttons/phone.png');}
+ul.content li.mail {background-image: url('../images/buttons/mail.png');}
 
 /* Testimonials */
 
@@ -465,7 +466,7 @@ ul.content li {
     border-bottom:1px solid #E0E0E0;
     padding-bottom:30px;
     text-align:center;
-    background: url(../images/patterns/greysquares.png) 50% 0 repeat fixed;
+    background: url(http://www.wallpaperup.com/uploads/wallpapers/2012/08/09/10043/0c7e53c25327f2c3a94bee4599a4130d.jpg) 50% 0 repeat fixed;
     background-color:black;
 }
 
@@ -500,49 +501,17 @@ ul.content li {
     padding: 0 100px 15px;
 }
 
-/* Subscribe */
+/* Tech (Subscribe) */
 
-#subscribe {
-
+#tech {
     color: #020B6B;
     height: auto;
     text-align:center;
     padding:20px 0 40px;
 }
 
-form#subscription {
-    margin:0 auto;
-    text-align:center;
-}
-
-form#subscription input {
-    margin-top:20px;
-    background-color: #E0E0E0;
-    padding:15px;
-    border-radius:3px;
-    border:none;
-    display:inline-block;
-    font-size:16px;
-    width:60%;
-    color:#6C6C6C;
-}
-
-form#subscription input#submit {
-    margin-top:10px;
-    background-color:#020B6B;
-    padding:15px;
-    border-radius:3px;
-    border:none;
-    display:inline-block;
-    font-size:18px;
-    width:auto;
-    color:white;
-    margin-left:10px;
-    cursor:pointer;
-}
-
-form#subscription input#submit:hover {
-    background-color:#D5832C;
+#techandtoolsImg {
+    width: 100%;
 }
 
 /* Pricing */
@@ -556,7 +525,6 @@ form#subscription input#submit:hover {
     padding-bottom:30px;
     background-color: #f2f2f2;
     text-align:center;
-    display: none;
 }
 
 .prices {
@@ -614,6 +582,59 @@ form#subscription input#submit:hover {
     border-top:1px solid #f2f2f2;
 }
 
+/* Team */
+
+#team {
+    color: #fff;
+    height: auto;
+    margin: 0 auto;
+    overflow: hidden;
+    border-bottom:1px solid #E0E0E0;
+    padding-bottom:30px;
+    text-align:center;
+    background: url(http://distinctionjewelry.com/info/wp-content/uploads/2013/01/blurred-background-5-2000x1250.jpg) fixed;
+    /* background-color:black; */
+}
+
+#team p {
+    color: white;
+}
+
+.team-intro {
+    margin:0 50px;
+    overflow:hidden;
+}
+
+.team-slide {
+    width:840px;
+    margin-right:120px;
+}
+
+.team-slide img {
+    float:left;
+    padding-right:50px;
+    width: 150px;
+    height: 150px;
+    -webkit-border-radius: 150px;
+    border-radius: 150px;
+}
+
+.team-slide p {
+    text-align:left;
+    float:left;
+    width:75%;
+    font-size:22px;
+    padding:15px 0 0;
+
+}
+
+.team-aligncenter img, .team-aligncenter p {
+    float:none;
+    text-align:center;
+    font-size:22px;
+    padding: 0 100px 15px;
+}
+
 /* Contact */
 
 #contact {
@@ -662,7 +683,6 @@ form#contact-form input#submit-contact:hover {
 /* Footer */
 
 footer {
-    background: url(../images/content/footer.jpg) 50% 0 repeat fixed;
     background-color:black;
     height: auto;
     background-size:cover;
