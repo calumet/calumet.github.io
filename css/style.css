@@ -1,6 +1,6 @@
 /*
  Calumet - Software Development Group
- Website, Styles, 2014
+ Website, Styles, 2015
  Tempplate URL: http://mildthemes.com/templates/mandarina/
 */
 
@@ -397,7 +397,7 @@ ul.menu li a:hover {
 }
 
 .featured-1 {
-    background-image: url('../images/implementations/sistemas.png');
+    background-image: url('../images/featured/portal.png');
     width: 300px;
     height: 300px;
     margin: 0 auto;
@@ -620,6 +620,10 @@ footer {
 
 footer p {
     color: white;
+}
+
+footer p small {
+    color: gray;
 }
 
 ul.social {
