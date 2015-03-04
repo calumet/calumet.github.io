@@ -461,6 +461,7 @@ ul.content li {
 ul.content li.office {background-image: url('../images/buttons/office.png');}
 ul.content li.phone {background-image: url('../images/buttons/phone.png');}
 ul.content li.mail {background-image: url('../images/buttons/mail.png');}
+ul.content li.web {background-image: url('../images/buttons/web.png');}
 
 /* Testimonials */
 
