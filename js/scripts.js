@@ -15,8 +15,7 @@ jQuery(document).ready(function ($) {
 		}
 	});
 
-
-	// Show/Hide previous corworkers
+	// Show/Hide previous corworkers.
 	$('.team-showprevious').toggle(function (e) {
 		$('.team-previous').slideDown(500);
 		$(this).find('span').text('Hide');
@@ -25,14 +24,12 @@ jQuery(document).ready(function ($) {
 		$(this).find('span').text('Show');
 	});
 
-
-	// Responsive Menu  
+	// Responsive Menu.
 	$("#menu").on('click', function () {
 		$("ul.menu").toggle();
 	});
 
-
-	// ScrollTo
+	// ScrollTo.
 	$('#nav, .menu').find('a').each(function () {
 		var $a = $(this);
 		var href = $a.attr('href');
@@ -45,8 +42,7 @@ jQuery(document).ready(function ($) {
 		});
 	});
 
-
-	// Google Analytics
+	// Google Analytics.
 	(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
 	(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
 	m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)

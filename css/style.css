@@ -1,7 +1,7 @@
 /*
  Calumet - Software Development Group
  Website, Styles, 2015
- Tempplate URL: http://mildthemes.com/templates/mandarina/
+ Template URL: http://mildthemes.com/templates/mandarina/
 */
 
 @charset "utf-8";
@@ -400,35 +400,10 @@ ul.menu li a:hover {
     padding-bottom:30px;
 }
 
-.featured-1 {
-    background-image: url('../images/featured/portal.png');
-    width: 300px;
-    height: 300px;
+.featured {
     margin: 0 auto;
-    background-size: cover;
-}
-
-.featured-2 {
-    background-image: url('../images/featured/elise-private.png');
     width: 300px;
-    height: 300px;
-    margin: 0 auto;
-    background-size: cover;
-}
-
-.featured-3 {
-    background-image: url('../images/featured/realtime.png');
-    width: 300px;
-    height: 300px;
-    margin: 0 auto;
-    background-size: cover;
-}
-.featured-4 {
-    background-image: url('../images/featured/elise-public.png');
-    width: 300px;
-    height: 300px;
-    margin: 0 auto;
-    background-size: cover;
+    max-width: 100%;
 }
 
 /* More features */
@@ -482,8 +457,9 @@ ul.content li.web {background-image: url('../images/buttons/web.png');}
 }
 
 .testimonials-intro {
-    margin:0 50px;
-    overflow:hidden;
+    margin: 20px 0;
+    font-size: 1.2em;
+    color: white;
 }
 
 .testimonials-slide {
@@ -555,28 +531,7 @@ ul.content li.web {background-image: url('../images/buttons/web.png');}
 }
 .team-current .team-member img {
     width: 150px;
-}
-
-/* Smartphones (portrait) ----------- */
-@media only screen 
-and (max-width : 320px) {
-    .team-current .team-member { width: 46%; font-size: 15px; }
-    .team-current .team-member img { width: 120px; }
-}
-
-/* Smartphones (landscape) ----------- */
-@media only screen 
-and (min-width : 321px) 
-and (max-width : 520px) {
-    .team-current .team-member { width: 46%; font-size: 19px; }
-    .team-current .team-member img { width: 140px; }
-}
-
-/* iPads (portrait and landscape) ----------- */
-@media only screen 
-and (min-width : 521px) 
-and (max-width : 768px) {
-    .team-current .team-member { width: 33%; }
+    border-radius: 50%;
 }
 
 .team-previous {
@@ -724,4 +679,29 @@ img.iphone {
 
 .red {
     background-color:#020B6B;
+}
+
+
+/* Smartphones (portrait) ----------- */
+@media only screen 
+and (max-width : 320px) {
+    .team-current .team-member { width: 46%; font-size: 15px; }
+    .team-current .team-member img { width: 120px; }
+    blockquote.big {margin: 20px;}
+}
+
+/* Smartphones (landscape) ----------- */
+@media only screen 
+and (min-width : 321px) 
+and (max-width : 520px) {
+    .team-current .team-member { width: 46%; font-size: 19px; }
+    .team-current .team-member img { width: 140px; }
+    blockquote.big {margin: 20px;}
+}
+
+/* iPads (portrait and landscape) ----------- */
+@media only screen 
+and (min-width : 521px) 
+and (max-width : 768px) {
+    .team-current .team-member { width: 33%; }
 }
